@@ -1,7 +1,7 @@
-package cz.nurmuedu.namo_reservation_system.Service;
+package cz.nurmuedu.namo_reservation_system.service;
 
-import cz.nurmuedu.namo_reservation_system.Model.User.Client;
-import cz.nurmuedu.namo_reservation_system.Repository.User.ClientRepository;
+import cz.nurmuedu.namo_reservation_system.model.User.Client;
+import cz.nurmuedu.namo_reservation_system.repository.User.ClientRepository;
 import org.springframework.stereotype.Service;
 
 @Service

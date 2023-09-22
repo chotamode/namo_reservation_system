@@ -1,11 +1,5 @@
 package cz.nurmuedu.namo_reservation_system;
 
-import cz.nurmuedu.namo_reservation_system.Model.User.Client;
-import cz.nurmuedu.namo_reservation_system.Model.User.User;
-import cz.nurmuedu.namo_reservation_system.Repository.User.ClientRepository;
-import cz.nurmuedu.namo_reservation_system.Service.UserService;
-import org.slf4j.Logger;
-import org.slf4j.LoggerFactory;
 import org.springframework.boot.SpringApplication;
 import org.springframework.boot.autoconfigure.SpringBootApplication;
 

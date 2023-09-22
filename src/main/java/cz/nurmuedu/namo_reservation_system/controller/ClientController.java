@@ -1,7 +1,7 @@
-package cz.nurmuedu.namo_reservation_system.Controller;
+package cz.nurmuedu.namo_reservation_system.controller;
 
-import cz.nurmuedu.namo_reservation_system.Model.User.Client;
-import cz.nurmuedu.namo_reservation_system.Service.ClientService;
+import cz.nurmuedu.namo_reservation_system.model.User.Client;
+import cz.nurmuedu.namo_reservation_system.service.ClientService;
 import org.springframework.web.bind.annotation.*;
 
 @RestController

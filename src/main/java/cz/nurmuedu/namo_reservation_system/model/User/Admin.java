@@ -1,4 +1,4 @@
-package cz.nurmuedu.namo_reservation_system.Model.User;
+package cz.nurmuedu.namo_reservation_system.model.User;
 
 import jakarta.persistence.Entity;
 

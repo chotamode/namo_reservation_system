@@ -1,6 +1,6 @@
-package cz.nurmuedu.namo_reservation_system.Model;
+package cz.nurmuedu.namo_reservation_system.model;
 
-import cz.nurmuedu.namo_reservation_system.Model.User.Client;
+import cz.nurmuedu.namo_reservation_system.model.User.Client;
 import jakarta.persistence.*;
 import lombok.Getter;
 import lombok.Setter;
@@ -8,15 +8,19 @@ import lombok.Setter;
 @Entity
 @Getter
 @Setter
-public class Payment {
+public class Appointment {
     @Id
     @GeneratedValue(strategy = GenerationType.SEQUENCE)
     @Column(name = "id", nullable = false)
     private Long id;
 
-    private Integer amount;
-    private String currency;
+    @OneToOne
+    @JoinColumn(name = "session_id")
+    private Session session;
     @OneToOne
     @JoinColumn(name = "client_id")
     private Client client;
+//    @OneToOne
+//    @JoinColumn(name = "payment_id")
+//    private Payment payment;
 }

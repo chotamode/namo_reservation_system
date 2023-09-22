@@ -1,6 +1,6 @@
-package cz.nurmuedu.namo_reservation_system.Model;
+package cz.nurmuedu.namo_reservation_system.model;
 
-import cz.nurmuedu.namo_reservation_system.Model.User.Client;
+import cz.nurmuedu.namo_reservation_system.model.User.Client;
 import jakarta.persistence.*;
 import lombok.Getter;
 import lombok.Setter;

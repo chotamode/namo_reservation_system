@@ -1,4 +1,4 @@
-package cz.nurmuedu.namo_reservation_system.Model.User;
+package cz.nurmuedu.namo_reservation_system.model.User;
 
 import jakarta.persistence.*;
 import lombok.Getter;
@@ -13,7 +13,8 @@ public abstract class User {
     @Column(name = "id", nullable = false)
     private Long id;
 
-    //Username from Telegram
+    //Username from Telegram should be unique
+    @Column(name = "tg_username", nullable = false, unique = true)
     private String tgUsername;
     private String name;
     private String surname;

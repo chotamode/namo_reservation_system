@@ -1,4 +1,4 @@
-package cz.nurmuedu.namo_reservation_system.Controller;
+package cz.nurmuedu.namo_reservation_system.controller;
 
 import org.springframework.web.bind.annotation.RequestMapping;
 import org.springframework.web.bind.annotation.RestController;
