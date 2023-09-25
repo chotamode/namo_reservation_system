@@ -1,9 +1,9 @@
-server:
+zserver:
   port: 8080
 
 spring:
   datasource:
-    url: jdbc:postgresql://localhost:5432/namo_reservation
+    url: jdbc:postgresql://localhost:5332/namo_reservation
     username: postgres
     password: admin
   jpa:

@@ -1,6 +1,7 @@
 package cz.nurmuedu.namo_reservation_system.service;
 
 import cz.nurmuedu.namo_reservation_system.model.Session;
+import cz.nurmuedu.namo_reservation_system.model.User.Client;
 import cz.nurmuedu.namo_reservation_system.repository.SessionRepository;
 import org.springframework.stereotype.Service;
 
@@ -15,5 +16,10 @@ public class SessionService {
 
     public Session getSessionById(Long sessionId) {
         return sessionRepository.findById(sessionId).orElseThrow();
+    }
+
+    //Creating new session
+    public Session createSession(Session session) {
+        return sessionRepository.save(session);
     }
 }
