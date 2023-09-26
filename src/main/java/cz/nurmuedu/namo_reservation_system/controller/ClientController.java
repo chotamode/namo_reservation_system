@@ -36,4 +36,9 @@ public class ClientController {
     public Iterable<Client> findAllClients() {
         return clientService.findAllClients();
     }
+
+    @GetMapping("/isRegisteredByTgUsername/{tgUsername}")
+    public boolean isRegisteredByTgUsername(@PathVariable String tgUsername) {
+        return clientService.isRegisteredByTgUsername(tgUsername);
+    }
 }

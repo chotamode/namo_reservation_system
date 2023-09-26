@@ -5,6 +5,8 @@ import jakarta.persistence.*;
 import lombok.*;
 
 import java.time.LocalDateTime;
+import java.util.ArrayList;
+import java.util.List;
 
 @Entity
 @Getter
@@ -45,9 +47,9 @@ public class Session {
     @NonNull
     private String location;
 
-    @ManyToOne
+    @OneToMany
     @JoinColumn(name = "client_id")
-    private Client[] clients;
+    private List<Client> clients;
 
 
 }

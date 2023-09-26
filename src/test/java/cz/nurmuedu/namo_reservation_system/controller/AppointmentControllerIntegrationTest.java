@@ -109,7 +109,7 @@ class AppointmentControllerIntegrationTest {
                 .param("sessionId", sessionFull.getId().toString())
         );
 
-        //Check if appointment was not created and saved to database
+        //Check if appointment was not created and not saved to database
         assert appointmentRepository.findByClientAndSession(client1, sessionFull) == null;
     }
 }

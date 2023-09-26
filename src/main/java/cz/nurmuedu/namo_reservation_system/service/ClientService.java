@@ -28,4 +28,8 @@ public class ClientService {
     public Iterable<Client> findAllClients() {
         return clientRepository.findAll();
     }
+
+    public boolean isRegisteredByTgUsername(String tgUsername) {
+        return clientRepository.existsByTgUsername(tgUsername);
+    }
 }
