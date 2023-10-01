@@ -3,10 +3,7 @@ package cz.nurmuedu.namo_reservation_system.controller;
 import cz.nurmuedu.namo_reservation_system.model.Session;
 import cz.nurmuedu.namo_reservation_system.service.SessionService;
 import org.springframework.http.ResponseEntity;
-import org.springframework.web.bind.annotation.PostMapping;
-import org.springframework.web.bind.annotation.RequestBody;
-import org.springframework.web.bind.annotation.RequestMapping;
-import org.springframework.web.bind.annotation.RestController;
+import org.springframework.web.bind.annotation.*;
 
 @RestController
 @RequestMapping("/session")
@@ -24,4 +21,15 @@ public class SessionController {
         sessionService.createSession(session);
         return ResponseEntity.ok(session);
     }
+
+    @GetMapping("/getUpcomingSessions")
+    public ResponseEntity<Session> getUpcomingSessions() {
+        return sessionService.getUpcomingSessions();
+    }
+
+    @GetMapping("/getUserSessions")
+    public ResponseEntity<Session> getUserSessions(@RequestBody String tgUsername) {
+        return sessionService.getUserSessions(tgUsername);
+    }
+
 }
